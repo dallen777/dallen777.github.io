@@ -48,7 +48,7 @@ var init = function (window) {
                 circle.x = 0;
             } 
             // TODO 5a) if the circle has gone past of the LEFT side of the screen then place it on the RIGHT
-            else if ( / * Fill me in! * / ) {
+            else if () {
                 
             } 
 
@@ -71,7 +71,11 @@ var init = function (window) {
             physikz.updatePosition(circles[3]);
             physikz.updatePosition(circles[4]);
             // TODO 5 : Call game.checkCirclePosition on your circles.
-           
+            game.checkCirclePosition(circles[0]);
+            game.checkCirclePosition(circles[1] );
+            game.checkCirclePosition(circles[2]);
+            game.checkCirclePosition(circles[3]);
+            game.checkCirclePosition(circles[4]);
 
             // TODO 8 : Iterate over the array
            
