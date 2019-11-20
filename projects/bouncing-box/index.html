@@ -39,18 +39,40 @@
 			var boardWidth = jQuery('.board').width();
 	
 			// TODO 2 - Variable declarations 
-
-			o
-			function update() {
+			var position; 
+			var direction;
+			var points;
+		    var speed;
+		    position = 0;
+			direction = 1;
+			speed = 5;
+			points = 0;
+			box.text(points);
+		    
+		    function update() {
 				// TODO 3 / 6 / 7 / 8
+				position = position + speed * direction;
 				
+				if (position > boardWidth) {
+				    direction = -1;
+				}
+				if (position < 0) {
+				    direction = 1;
+				}
+				
+				
+				box.css('left', position);
 			};
 
 
 			
 			function handleBoxClick() {
 				// TODO 4 / 5
-				
+				position = 0
+				box.css('left' , 0);
+			    points+=7;
+			    speed+=3;
+			    box.text(points);
 			};
 
 
